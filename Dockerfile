@@ -24,7 +24,7 @@ RUN make
 RUN make install
 
 #run bonnie
-RUN bonnie++ >> bonnie_result.txt
+RUN bonnie++ -u >> bonnie_result.txt
 RUN ls
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
