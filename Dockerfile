@@ -18,7 +18,7 @@ RUN tar zxvf bonnie++-1.03e.tgz
 RUN cd bonnie++-1.03e.tgz
 RUN ./configure
 RUN make
-Run make install
+RUN make install
 
 #run bonnie
 RUN bonnie++ >> bonnie_result.txt
