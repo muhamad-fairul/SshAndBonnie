@@ -16,6 +16,8 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 RUN wget http://www.coker.com.au/bonnie++/bonnie++-1.03e.tgz
 RUN tar zxvf bonnie++-1.03e.tgz
 RUN cd bonnie++-1.03e
+RUN ls
+RUN pwd
 RUN ./configure
 RUN make
 RUN make install
